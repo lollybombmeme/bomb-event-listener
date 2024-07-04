@@ -1,0 +1,30 @@
+[
+  {
+    "name": "ethereum-bridge-event",
+    "script": "./script/scanLogs.js",
+    "args": "--fromBlock= --taskNames=worker.on_bridge_token --eventFileNames=Bridge.json topics=0xbfdb23c7ae7de4015fc55cbdf0cca0e90fb013a3a244845e2a7057d0027bf7ec --httpRpc=HTTP_ETH_RPC --chain=1 --address=0xd61dc7c04778758fc76e76aab38c03f4c158506d",
+    "instance": 1,
+    "exc_mode": "cluster"
+  },
+  {
+    "name": "ethereum-claim-event",
+    "script": "./script/scanLogs.js",
+    "args": "--fromBlock=20103128 --taskNames=worker.on_claim_token --eventFileNames=Claim.json topics=0xa84e9524cf93708ceb4c2aadd736004b5801d6b8eca252c63a9aa446189a075c --httpRpc=HTTP_ETH_RPC --chain=1 --address=0xd61dc7c04778758fc76e76aab38c03f4c158506d",
+    "instance": 1,
+    "exc_mode": "cluster"
+  },
+  {
+    "name": "bnb-bridge-event",
+    "script": "./script/scanLogs.js",
+    "args": "--fromBlock=39658033 --taskNames=worker.on_bridge_token --eventFileNames=Bridge.json topics=0xbfdb23c7ae7de4015fc55cbdf0cca0e90fb013a3a244845e2a7057d0027bf7ec --httpRpc=HTTP_BNB_RPC --chain=56 --address=0xd61dc7c04778758fc76e76aab38c03f4c158506d",
+    "instance": 1,
+    "exc_mode": "cluster"
+  },
+  {
+    "name": "bnb-claim-event",
+    "script": "./script/scanLogs.js",
+    "args": "--fromBlock=39658033 --taskNames=worker.on_claim_token --eventFileNames=Claim.json topics=0xa84e9524cf93708ceb4c2aadd736004b5801d6b8eca252c63a9aa446189a075c --httpRpc=HTTP_BNB_RPC --chain=56 --address=0xd61dc7c04778758fc76e76aab38c03f4c158506d",
+    "instance": 1,
+    "exc_mode": "cluster"
+  }
+]

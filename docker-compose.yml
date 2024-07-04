@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+    brc-event:
+        container_name: bnb-event-subcriber
+        build:
+            context: .
+            dockerfile: Dockerfile
+        env_file:
+            - .env
+        restart: always
+        command: pm2-runtime start pm2.testnet.json
+
+networks:
+  bomb_network:
+    external: true
+

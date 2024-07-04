@@ -1,0 +1,14 @@
+[
+    {
+      "name": "amount",
+      "type": "uint256"
+    },
+    {
+      "name": "walletReceive",
+      "type": "address"
+    },
+    {
+      "name": "callbackData",
+      "type": "string"
+    }
+  ]

@@ -1,0 +1,14 @@
+[
+  {
+    "name": "amount",
+    "type": "uint256"
+  },
+  {
+    "name": "toChainId",
+    "type": "uint256"
+  },
+  {
+    "name": "wallet",
+    "type": "address"
+  }
+]
